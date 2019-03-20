@@ -1,4 +1,4 @@
-# teaching-lectures
+#MCMC选讲
 
 教材：Bayesian Data Analysis,第三版
 http://gen.lib.rus.ec/book/index.php?md5=2E9D2DF246CB144C7224D1E6DB53466F
