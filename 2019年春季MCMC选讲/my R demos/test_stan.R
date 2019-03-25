@@ -9,6 +9,7 @@ library(gridExtra)
 library(bayesplot)
 theme_set(bayesplot::theme_default(base_family = "sans"))
 library(shinystan)
+library(MASS)
 source('stan_utility.R')
 SEED <- 48927 # set random seed for reproducability
 
