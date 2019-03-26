@@ -12,6 +12,7 @@ library(shinystan)
 library(MASS)
 source('stan_utility.R')
 SEED <- 48927 # set random seed for reproducability
+setwd('/media/zheqng/Seagate Backup Plus Drive/zheqng@nwu/文档/teaching lectures/2019年春季MCMC选讲/my R demos/')
 
 d_bern <- list(N = 10, y = c(1, 1, 1, 0, 1, 1, 1, 0, 1, 0))
 fit_bern <- stan(file = 'bern.stan', data = d_bern, seed = SEED)
@@ -40,7 +41,6 @@ fit_lin <- stan(file = 'lin.stan', data = d_lin_priors, seed = SEED)
 monitor(fit_lin, probs = c(0.1, 0.5, 0.9))
 check_hmc_diagnostics(fit_lin)
 
-setwd('/media/zheqng/Seagate Backup Plus Drive/zheqng@nwu/文档/teaching lectures/2019年春季MCMC选讲/my R demos/')
 
 y = mvrnorm(10,c(0,0),diag(2))
 data=list(y=y,N=10)
