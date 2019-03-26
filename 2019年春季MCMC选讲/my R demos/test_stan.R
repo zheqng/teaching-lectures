@@ -49,5 +49,3 @@ fit_bi_norm<-stan(file = 'bi_norm.stan',data = data, pars = parameters,seed = SE
 monitor(fit_bi_norm,probs = c(0.1,0.5,0.9))
 
 
-parameters = c("y")
-fit_MH<-stan(file = 'MH1.stan',pars = parameters,seed = SEED)
