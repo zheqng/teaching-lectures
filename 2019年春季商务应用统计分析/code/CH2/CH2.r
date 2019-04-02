@@ -1,5 +1,5 @@
 rm(list=ls())										#清空当前工作空间
-setwd("/media/zheqng/Seagate Backup Plus Drive/zheqng@nwu/文档/teaching lectures/2019年春季应用商务统计分析/程序/CH2/")
+setwd("/media/zheqng/Seagate Backup Plus Drive/zheqng@nwu/文档/teaching lectures/2019年春季商务应用统计分析/code/CH2/")
 a=read.csv("real.csv",header=T)		#读入csv格式的数据，赋值为a
 attach(a)										#将数据集a中个变量添加到工作空间，便与直接调用
 pairs(a[,c(1:6)])									#对a的前6列做散点图
@@ -38,7 +38,7 @@ par(mfrow=c(2,2))									#设置画图模式为2x2
 plot(lm4,which=c(1:4))									#画出lm4中对应于模型检验的4张图，包括残差图、QQ图和Cook距离图
 par(mfrow=c(1,1))									#设置画图模式为1x1
 
-a0=read.csv("D:/Practical Business Data Analysis/case/CH2/new.csv")			#读入新数据，赋值给a0
+a0=read.csv("new1.csv")			#读入新数据，赋值给a0
 a0=a0[,c(1:5)]										#取a0的前5列	
 a0											#展示a0的数据
 
