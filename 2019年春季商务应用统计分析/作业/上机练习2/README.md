@@ -1,0 +1,4 @@
+# 数据说明
+
+- 来源http://archive.ics.uci.edu/ml/datasets/Adult
+- 用第二章方差分析进行分析
