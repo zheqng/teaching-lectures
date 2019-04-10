@@ -3,10 +3,13 @@ setwd('/media/zheqng/Seagate Backup Plus Drive/zheqng@nwu/文档/teaching lectur
 a = read.table('adult.data',sep =',')
 names(a) <-c('age','workclass','fnlwgt','education','education-num','marital-status','occupation','relationship','race','sex','capital-gain','capital-loss','hours-per-week','native-country','level')
 a.dis <-a[,-c(1,3,5,12,13)]
-a.dis$`capital-gain` = as.matrix(a.dis$`capital-gain`)
+a.dis$`capital-gain` =as.vector( as.matrix(a.dis$`capital-gain`))
 a.analysis <- a.dis[a.dis$`capital-gain` >0,]
 attach(a.analysis)
 
+lm1 = lm(`capital-gain`~as.factor(level) + as.factor('education'))
+anova(lm1)
+summary(lm1)
 # age
 # workclass
 # fnlwgt

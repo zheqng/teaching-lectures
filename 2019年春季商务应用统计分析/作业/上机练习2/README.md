@@ -4,3 +4,4 @@
 - 用第二章方差分析进行分析
 - 数据读入用readdata.R
 - 只分析a.analysis数据即可．
+－　预测adult.test中的数据．
