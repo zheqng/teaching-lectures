@@ -7,7 +7,9 @@ a.dis$`capital-gain` =as.vector( as.matrix(a.dis$`capital-gain`))
 a.analysis <- a.dis[a.dis$`capital-gain` >0,]
 attach(a.analysis)
 
-lm1 = lm(`capital-gain`~as.factor(level) + as.factor('education'))
+`captial-gain` <- as.vector(`capital-gain`)
+lm1 = lm(`capital-gain`~as.factor(level) + as.factor(occupation))
+boxplot(`capital-gain`)
 anova(lm1)
 summary(lm1)
 # age
