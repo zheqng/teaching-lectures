@@ -13,4 +13,5 @@ https://github.com/exacity/deeplearningbook-chinese
 成绩 平时成绩+期末考试(开卷，第10周随堂考试)
 
 上课时间：周二上午34节，单周周四上午12节
-https://github.com/fengdu78/deeplearning_ai_books
+
+- rnn网址：https://github.com/fengdu78/deeplearning_ai_books/blob/master/markdown/lesson5-week1.md
