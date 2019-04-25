@@ -5,7 +5,7 @@
 - 考试时间：第十周周二期中考试，第十一周期末考试
 
 ## 课程相关
--教材：Bayesian Data Analysis,第三版
+- 教材：Bayesian Data Analysis,第三版
 http://gen.lib.rus.ec/book/index.php?md5=2E9D2DF246CB144C7224D1E6DB53466F
 -R语言程序链接[https://github.com/avehtari/BDA_R_demos]
 - 神经网络代码
